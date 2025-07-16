@@ -23,25 +23,25 @@ Questions;
      Sets up the working directory, downloads provider plugins and modules.  
    - **terraform plan**
      Shows a preview of changes by comparing config to current state.  
-   - **terraform apply **
+   - **terraform apply**
      Executes the planned changes to create, update or destroy resources.  
 
 2. **What do  terraform fmt ,  terraform validate , and  terraform refresh  do?**
-   - **terraform fmt **
+   - **terraform fmt**
      Formats all  .tf  files according to HCL style conventions.  
-   - **terraform validate **
+   - **terraform validate**
      Checks config syntax and basic consistency before execution.  
-   - **terraform refresh **
+   - **terraform refresh**
      Reads real resource state and updates the local state file (now  apply -refresh-only ).  
 
 3. **What are  main.tf ,  variables.tf , and  outputs.tf  for?**
-   - **main.tf **
+   - **main.tf**
      Core infrastructure definitions: providers, resources, modules.  
-   - **variables.tf **
+   - **variables.tf**
      Declares input variables (names, types, defaults).  
-   - **terraform.tfvars **
+   - **terraform.tfvars**
      Assigns concrete values to declared variables.  
-   - **outputs.tf **
+   - **outputs.tf**
      Defines values to display after apply (e.g. IP addresses, IDs).  
 
 4. **What is HCL and how does it look?**
