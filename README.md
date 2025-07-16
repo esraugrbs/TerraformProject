@@ -143,7 +143,7 @@ Questions;
      ```
     - **What I learned:**
      VNet and Subnet CIDR ranges must not overlap and must align with the team’s network plan.
-    - **Fix:**Used  "10.0.0.0/16"  as specified.
+    - **Fix:** Used  "10.0.0.0/16"  as specified.
 
 ---
 
