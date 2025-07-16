@@ -1,17 +1,22 @@
-```markdown
+
 # TerraformProject
 
-**My Terraform version:**  
 ```
+
+**My Terraform version:** 
+
+> terraform -v
 
 Terraform v1.12.2 on windows\_amd64
 provider registry.terraform.io/hashicorp/azurerm v3.117.1
 
-````
+
+```
+
 
 ---
 
-## Questions & Short Answers
+Questions;
 
 1. **What are `terraform init`, `terraform plan`, and `terraform apply`, and why do we use them?**  
    - **`terraform init`**  
@@ -45,7 +50,7 @@ provider registry.terraform.io/hashicorp/azurerm v3.117.1
    block_type "label" {
      argument = "value"
    }
-````
+
 
 5. **How do you write a `resource` block in Terraform, and what does it include?**
 
