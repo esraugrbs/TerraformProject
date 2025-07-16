@@ -2,14 +2,12 @@
 # TerraformProject
 
 ```
-
 My Terraform version:
 
 > terraform -v
 
 Terraform v1.12.2 on windows\_amd64
 provider registry.terraform.io/hashicorp/azurerm v3.117.1
-
 
 ```
 
@@ -79,21 +77,21 @@ Questions;
 
 10. **What are VNet, Subnet, and NSG?**
 
-     **VNet:** Virtual Network.
-     **Subnet:** Segment of a VNet’s IP space.
-     **NSG:** Network Security Group (firewall rules).
+    - **VNet:** Virtual Network.
+    - **Subnet:** Segment of a VNet’s IP space.
+    - **NSG:** Network Security Group (firewall rules).
 
 11. **What’s the difference between Public and Private IP?**
 
-     **Public IP:** Internet-routable address.
-     **Private IP:** Internal address within a VNet.
+    - **Public IP:** Internet-routable address.
+    - **Private IP:** Internal address within a VNet.
 
 12. **What does it mean to attach an NSG to a subnet instead of directly to a VM?**
     Subnet-level NSG applies the same rules to every VM in that subnet.
 
 ---
 
-## Problems I Experienced & What I Learned
+## Problems & What I Learned
 
 1. **“provider” block error and fix**
 
@@ -143,9 +141,9 @@ Questions;
      ```
      Error: Address space overlaps with existing subnet
      ```
-   * **What I learned:**
+    - **What I learned:**
      VNet and Subnet CIDR ranges must not overlap and must align with the team’s network plan.
-   * **Fix:**Used  "10.0.0.0/16"  as specified.
+    - **Fix:**Used  "10.0.0.0/16"  as specified.
 
 ---
 
