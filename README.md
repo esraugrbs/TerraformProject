@@ -79,14 +79,14 @@ Questions;
 
 10. **What are VNet, Subnet, and NSG?**
 
-    * **VNet:**Virtual Network.
-    * **Subnet:**Segment of a VNet’s IP space.
-    * **NSG:**Network Security Group (firewall rules).
+    * **VNet:** Virtual Network.
+    * **Subnet:** Segment of a VNet’s IP space.
+    * **NSG:** Network Security Group (firewall rules).
 
 11. **What’s the difference between Public and Private IP?**
 
-    * **Public IP:**Internet-routable address.
-    * **Private IP:**Internal address within a VNet.
+    * **Public IP:** Internet-routable address.
+    * **Private IP:** Internal address within a VNet.
 
 12. **What does it mean to attach an NSG to a subnet instead of directly to a VM?**
     Subnet-level NSG applies the same rules to every VM in that subnet.
