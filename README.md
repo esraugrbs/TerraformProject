@@ -3,7 +3,7 @@
 
 ```
 
-**My Terraform version:** 
+**My Terraform version:**
 
 > terraform -v
 
@@ -18,33 +18,33 @@ provider registry.terraform.io/hashicorp/azurerm v3.117.1
 
 Questions;
 
-1. **What are  terraform init ,  terraform plan , and  terraform apply , and why do we use them?**  
-   - ** terraform init **  
+1. **What are  terraform init ,  terraform plan , and  terraform apply , and why do we use them?** 
+   - **terraform init** 
      Sets up the working directory, downloads provider plugins and modules.  
-   - ** terraform plan **  
+   - **terraform plan**
      Shows a preview of changes by comparing config to current state.  
-   - ** terraform apply **  
+   - **terraform apply **
      Executes the planned changes to create, update or destroy resources.  
 
-2. **What do  terraform fmt ,  terraform validate , and  terraform refresh  do?**  
-   - ** terraform fmt **  
+2. **What do  terraform fmt ,  terraform validate , and  terraform refresh  do?**
+   - **terraform fmt **
      Formats all  .tf  files according to HCL style conventions.  
-   - ** terraform validate **  
+   - **terraform validate **
      Checks config syntax and basic consistency before execution.  
-   - ** terraform refresh **  
+   - **terraform refresh **
      Reads real resource state and updates the local state file (now  apply -refresh-only ).  
 
-3. **What are  main.tf ,  variables.tf , and  outputs.tf  for?**  
-   - ** main.tf **  
+3. **What are  main.tf ,  variables.tf , and  outputs.tf  for?**
+   - **main.tf **
      Core infrastructure definitions: providers, resources, modules.  
-   - ** variables.tf **  
+   - **variables.tf **
      Declares input variables (names, types, defaults).  
-   - ** terraform.tfvars **  
+   - **terraform.tfvars **
      Assigns concrete values to declared variables.  
-   - ** outputs.tf **  
+   - **outputs.tf **
      Defines values to display after apply (e.g. IP addresses, IDs).  
 
-4. **What is HCL and how does it look?**  
+4. **What is HCL and how does it look?**
    HashiCorp Configuration Language is block-based and easy to read. Example:  
       hcl
    block_type "label" {
@@ -79,14 +79,14 @@ Questions;
 
 10. **What are VNet, Subnet, and NSG?**
 
-    * **VNet:** Virtual Network.
-    * **Subnet:** Segment of a VNet’s IP space.
-    * **NSG:** Network Security Group (firewall rules).
+    * **VNet:**Virtual Network.
+    * **Subnet:**Segment of a VNet’s IP space.
+    * **NSG:**Network Security Group (firewall rules).
 
 11. **What’s the difference between Public and Private IP?**
 
-    * **Public IP:** Internet-routable address.
-    * **Private IP:** Internal address within a VNet.
+    * **Public IP:**Internet-routable address.
+    * **Private IP:**Internal address within a VNet.
 
 12. **What does it mean to attach an NSG to a subnet instead of directly to a VM?**
     Subnet-level NSG applies the same rules to every VM in that subnet.
@@ -128,7 +128,7 @@ Questions;
      ```
    * **What I learned:**
      Azure location names must match exactly those supported by your subscription.
-   * **Fix:** Switched to  Poland Central .
+   * **Fix:**Switched to  Poland Central .
 
 3. **CIDR block mistake and why it matters**
 
@@ -145,7 +145,7 @@ Questions;
      ```
    * **What I learned:**
      VNet and Subnet CIDR ranges must not overlap and must align with the team’s network plan.
-   * **Fix:** Used  "10.0.0.0/16"  as specified.
+   * **Fix:**Used  "10.0.0.0/16"  as specified.
 
 ---
 
