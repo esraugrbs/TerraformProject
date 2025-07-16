@@ -1,6 +1,11 @@
 
 # TerraformProject
 
+
+
+![Flowchar Diagram](images/flowchart.png)
+
+
 ```
 My Terraform version:
 
