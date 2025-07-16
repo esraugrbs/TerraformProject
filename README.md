@@ -46,15 +46,15 @@ Questions;
 
 4. **What is HCL and how does it look?**
    HashiCorp Configuration Language is block-based and easy to read. Example:  
-      hcl
+    ```
    block_type "label" {
      argument = "value"
    }
-
+    ```
 
 5. **How do you write a  resource  block in Terraform, and what does it include?**
 
-   ```hcl
+   ```
    resource "azurerm_resource_type" "name" {
      key          = "value"
      nested_block { … }
