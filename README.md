@@ -3,7 +3,7 @@
 
 
 
-![Flowchar Diagram](images/flowchart.png)
+![Flowchar Diagram](flowchart.png)
 
 
 ```
