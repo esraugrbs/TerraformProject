@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "azurerm" {
-  features {}
+  features {}        
 }
 
 
@@ -34,7 +34,7 @@ resource "azurerm_subnet" "subnet" {
   virtual_network_name = azurerm_virtual_network.vnet.name
 }
 
-# 4) NSG + kurallar
+
 resource "azurerm_network_security_group" "nsg" {
   name                = "sdx-nsg"
   location            = var.location
@@ -96,10 +96,10 @@ resource "azurerm_network_interface" "nic" {
 
 
 resource "azurerm_linux_virtual_machine" "vm" {
-  name                  = "sdx-vm"
-  resource_group_name   = azurerm_resource_group.rg.name
-  location              = var.location
-  size                  = "Standard_B1s"
+  name                = "sdx-vm"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = var.location
+  size                = "Standard_B1s"
   network_interface_ids = [azurerm_network_interface.nic.id]
 
   admin_username = var.admin_username
@@ -115,7 +115,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
     version   = "latest"
   }
 
-  # Betiği base64 kodlayarak gönderiyoruz
   custom_data = filebase64("${path.module}/apache.sh")
 
   os_disk {

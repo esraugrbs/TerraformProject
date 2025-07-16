@@ -2,9 +2,9 @@
 
 My terraform version:
 > terraform -v
-Terraform v1.12.2
-on windows_amd64
-+ provider registry.terraform.io/hashicorp/azurerm v3.117.1
+
+ Terraform v1.12.2 on windows_amd64
+ provider registry.terraform.io/hashicorp/azurerm v3.117.1
 
 Questions:
 1. What are terraform init, terraform plan, and terraform apply, and why do we use them?
@@ -45,8 +45,8 @@ Questions:
 5. How do you write a resource block in Terraform, and what does it include?
 •  resource block
    resource "azurerm_resource_type" "name" {
-    # key = "value"
-    # nested_block { … }
+     key = "value"
+     nested_block { … }
 }
    You specify the provider+type, give it a local name, and then list
    all the settings and any nested blocks it needs.
@@ -116,19 +116,19 @@ What I learned:
 
 How It run?
 1. Initialize the Terraform Working Directory
- -terraform init
+ +terraform init
 
 2. Format Your Configuration Files
- -terraform fmt
+ +terraform fmt
 
 3. Validate the Configuration
- -terraform validate
+ +terraform validate
 
 4. Generate an Execution Plan
- -terraform plan 
+ +terraform plan 
 
 5. Apply 
- -terraform apply
+ +terraform apply
 
 6. Destroy (Don't forget this part!)
- -terraform destroy
+ +terraform destroy
